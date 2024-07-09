@@ -14,7 +14,7 @@ public class HelloController {
 	
 	@GetMapping("/")
 	public String sayHello() {
-		return "Hello";
+		return "Hola Mundo! Esto es una prueba con API REST";
 	}
 	
 
