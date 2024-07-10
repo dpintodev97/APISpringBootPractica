@@ -25,7 +25,7 @@ public class HelloController {
 	 */
 	@GetMapping("hello/{nombre}/{edad}/{profesion}")
 	public String sayHelloComplete(@PathVariable String nombre, @PathVariable int edad, @PathVariable String profesion) {
-		return "Helly my friend" + nombre + "y tienes" + edad + "años" + "y eres" + profesion ;
+		return "Helly my friend, " + nombre + " ,tienes" + edad + "años" + "y eres" + profesion ;
 	}
 	
 	@GetMapping("/bye")
