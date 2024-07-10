@@ -20,6 +20,14 @@ public class HelloController {
 	public String sayHello(@PathVariable String nombre) {
 		return "Hola Mundo! " + nombre + ", esto es una prueba con API REST ;)";
 	}
+	/*
+	 * AGREGANDO UN SALUDO COMPLETO, INCORPORANDO, edad y profesión
+	 */
+	@GetMapping("hello/{nombre}/{edad}/{profesion}")
+	public String sayHelloComplete(@PathVariable String nombre, @PathVariable int edad, @PathVariable String profesion) {
+		return "Helly my friend" + nombre + "y tienes" + edad + "años" + "y eres" + profesion ;
+	}
+	
 	@GetMapping("/bye")
 	public String sayBye() {
 		return "Goodbye Mundo!";
